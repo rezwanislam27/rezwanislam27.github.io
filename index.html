@@ -15,6 +15,7 @@
   .navbar-dark .navbar-nav .nav-link {
     color: orange}
   .navbar-dark .navbar-nav .nav-link:hover{color:#71cd9d;}
+  span{font-size:30px;}
   body {
       position: relative; 
   }
@@ -25,6 +26,9 @@
 </style>
 <script src="jquery/jquery.min.js"></script>
 <script src="bootstrap-4.3.1/js/bootstrap.min.js"></script>
+<script src="waypoint/lib/jquery.waypoints.min.js"></script>
+  <script src="Counter-Up-master/jquery.counterup.min.js"></script>  
+  
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   
@@ -133,19 +137,19 @@
 <div class="row ass3 d-flex justify-content-center align-items-center text-center text-light">
   <div class="col-md-2"></div>
   <div class="col-md-2">
-    <h3 class="p-3" style="text-decoration: underline;">200</h3>
+    <span class="p-3 counter" style="text-decoration: underline;">200</span>
     <h3>PROJECTS</h3>
   </div>
   <div class="col-md-2">
-       <h3 class="p-3" style="text-decoration: underline;">150</h3>
+       <span class="p-3 counter" style="text-decoration: underline;">150</span>
        <h3>ORDERS</h3>
   </div>
   <div class="col-md-2">
-       <h3 class="p-3" style="text-decoration: underline;">100</h3>
+       <span class="p-3 counter" style="text-decoration: underline;">100</span>
        <h3>CLIENTS</h3>
   </div>
   <div class="col-md-2">
-       <h3 class="p-3" style="text-decoration: underline;">50</h3>
+       <span class="p-3 counter" style="text-decoration: underline;">50</span>
        <h3>PARTNERS</h3>
   </div>
   <div class="col-md-2"></div>
@@ -260,5 +264,10 @@
      <div class="col-md-12 text-center p-3"><h6>Copyright ©2019 All rights reserved | Designed By Developer Rezwan Islam.</h6></div>
 </div>        
 </div>
+  <script type="text/javascript">
+  $('.counter').counterUp({
+    delay:10,
+    time:1500
+  });
 </body>
 </html>
