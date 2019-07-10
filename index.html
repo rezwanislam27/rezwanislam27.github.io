@@ -38,9 +38,17 @@ letter-spacing: .15em; /* Adjust as needed */
   body {
       position: relative; 
   }
-   @media (min-width:768px){ 
+   @media (min-width:769px){ 
   .ass{border-right: 1px solid #dfdfdf;}
   .ass:last-child{border-right: none;}
+  }
+   @media screen and (min-width: 0px) and (max-width: 768px){
+    div#home h1{font-size: 20px;}
+
+    @keyframes typing {
+  from { width: 0 }
+  to { width:186px }
+}
   }
 </style>
 <script src="jquery/jquery.min.js"></script>
