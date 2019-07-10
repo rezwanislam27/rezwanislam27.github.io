@@ -6,6 +6,25 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="bootstrap-4.3.1/css/bootstrap.min.css">
 <style type="text/css">
+  div#home h1{font-family:Helvetica;margin: 0 auto;white-space: nowrap;border-right: .15em solid orange;overflow: hidden;
+letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blinking-cursor .5s step-end infinite;
+
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width:372px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+  
   .image1{width: 100%;height: 500px;background:url(image/1.jpg) no-repeat center center;margin-top: 56px}
   .ass3{min-height:300px;background: url(image/4.jpg) no-repeat top left}
   .ass4{border: 1px solid #dfdfdf;}
